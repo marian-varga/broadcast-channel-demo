@@ -1,0 +1,17 @@
+<html>
+    <head>
+    </head>
+    <body>
+        Text entered elsewhere: <div id="message"></div>
+        <script>
+            const bc = new BroadcastChannel("demochannel");
+            const div = document.getElementById("message");
+            bc.onmessage = (event) => {
+                console.log("Received event", event);
+                div.innerHTML = event.data;
+            }
+        </script>
+    </body>
+</html>
+
+
