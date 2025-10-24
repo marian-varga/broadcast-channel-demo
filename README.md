@@ -1,0 +1,1 @@
+Open a.html and b.html in two browser tabs or windows. Then type in one and watch the other one.
